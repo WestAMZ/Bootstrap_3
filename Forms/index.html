@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Bootstrap - Forms</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -14,18 +14,89 @@
 </head>
 
 <body>
-    <form action="" class="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" placeholder="Nombre">
-        <label for="option">Elige una opción</label>
-        <select name="" id="option">
-            <option value="Optción #1"></option>
-            <option value="Optción #2"></option>
-            <option value="Optción #3"></option>
-            <option value="Optción #4"></option>
-            <option value="Optción #5"></option>
-        </select>
-    </form>
+    <div class="container">
+        <br>
+        <!-- Los elementos Input deben llevar la clase 
+        form-control -->
+        <h1>Form Vertical</h1>
+        <form action="" class="">
+            <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                    <label for="option">Elige una opción</label>
+                    <select class="form-control" name="" id="option">
+                        <option value="">Opción #1</option>
+                        <option value="">Opción #2</option>
+                        <option value="">Opción #3</option>
+                        <option value="">Opción #4</option>
+                        <option value="">Opción #5</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" name="" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <div class="form-group">
+                    <label for="archivo">Archivo:</label>
+                    <input class="form-control" type="file" name="" id="archivo">
+                    <p class="help-block">Maximo 50MB</p>
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+        <hr>
+        <h1>Form En Linea</h1>
+        <form action="" class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="Nombre">Nombre:</label>
+                <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                        <label class="sr-only" for="correo">Correo:</label>
+                        <div class="input-group-addon">@</div>
+                        <input class="form-control" type="text" placeholder="Correo">
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <label for="">
+                        <input class="form-control" type="checkbox" name="" id="">Recuerdame
+                </label>
+            </div>
+            <button class="">Eviar</button>
+        </form>
+        <h1>Form Horizontal</h1>
+        <form action="" class="">
+                <div class="form-group">
+                        <label class="control-label col-md-2" for="Nombre">Nombre:</label>
+                        <div class="col-md-10">
+                                <input class="form-control" type="text" placeholder="Nombre">
+                        </div>
+                </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="Nombre">Nombre:</label>
+                <input class="form-control" type="text" placeholder="Nombre">
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                        <label class="sr-only" for="correo">Correo:</label>
+                        <div class="input-group-addon">@</div>
+                        <input class="form-control" type="text" placeholder="Correo">
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <label for="">
+                        <input class="form-control" type="checkbox" name="" id="">Recuerdame
+                </label>
+            </div>
+            <button class="">Eviar</button>
+        </form>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
